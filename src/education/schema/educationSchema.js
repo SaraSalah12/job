@@ -1,7 +1,7 @@
 const {Schema} =require("mongoose");
 const eduSchema= new Schema({
-education_code:Number,
 level:String,
+minor:[{type:Schema.Types.ObjectId,ref:"minor"}]
 },
 {
     timeStamps: true

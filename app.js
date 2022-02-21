@@ -4,7 +4,7 @@ const app = express()
 const port = 3000
 dbConnection()
 const jobRouter=require("./src/job/routes/jobRoutes");
-const levelRouter=require("./src/level/routes/levelRoutes");
+const levelRouter=require("./src/jobLevel/routes/levelRoutes");
 const educationRouter=require("./src/education/routes/educationRoutes");
 const responsibilityRouter=require("./src/responsibilites/routes/responseRoutes");
 const softRouter=require("./src/softSkills/routes/softRoutes");

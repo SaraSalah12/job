@@ -1,9 +1,9 @@
 const {Schema} =require("mongoose");
 const levelSchema= new Schema({
-next_job:String,
+jobLevel:String,
 experience:String,
-quality_skill:String,
-job_code:Number
+quality:String,
+nextLevel:{type:Schema.Types.ObjectId,ref:"level"},
 
 },
 {
